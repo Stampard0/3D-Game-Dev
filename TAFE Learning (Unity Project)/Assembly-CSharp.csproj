@@ -57,6 +57,8 @@
     <Compile Include="Assets\MouseLook.cs" />
     <Compile Include="Assets\Kick.cs" />
     <Compile Include="Assets\ObjectTeleport.cs" />
+    <Compile Include="Assets\Node.cs" />
+    <Compile Include="Assets\Depth_First_Search.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
