@@ -1,0 +1,8 @@
+SUM(A, B)
+	return A + B
+
+PRINT "2 plus 2 is: "
+var = SUM(2, 2)
+PRINT var
+var2 = var AS float
+PRINT var2
