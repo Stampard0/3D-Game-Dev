@@ -61,6 +61,7 @@
     <Compile Include="Assets\Code\ObjectTeleport.cs" />
     <Compile Include="Assets\Code\OOP.cs" />
     <Compile Include="Assets\Code\OOP_Vehicle.cs" />
+    <Compile Include="Assets\Code\Breadth_First_Search.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
