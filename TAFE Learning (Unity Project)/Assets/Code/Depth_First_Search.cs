@@ -16,7 +16,7 @@ public class Depth_First_Search : MonoBehaviour
         }
         else
         {
-            Debug.Log(target.name + " was not found");
+            Debug.Log(target.name + " was not found.");
         }
     }
 
