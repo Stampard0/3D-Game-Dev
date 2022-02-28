@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.26f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\FiniteStateMachine.cs" />
     <Compile Include="Assets\Code\Breadth_First_Search.cs" />
     <Compile Include="Assets\Code\Health.cs" />
     <Compile Include="Assets\Code\GenerateHUD.cs" />
@@ -69,7 +70,7 @@
     <Compile Include="Assets\Code\Door.cs" />
     <Compile Include="Assets\Code\ObjectTeleport.cs" />
     <Compile Include="Assets\Code\HealthPotion.cs" />
-    <Compile Include="Assets\Code\FiniteStateMachine.cs" />
+    <Compile Include="Assets\Code\Player_Teleport.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
