@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public Node targetnode;
+
     [Tooltip("Movement speed modifier.")]
     [SerializeField] private float speed = 3;
     private Node currentNode;
@@ -32,6 +34,10 @@ public class Enemy : MonoBehaviour
                     transform.Translate(currentDir * speed * Time.deltaTime);
                 }
                 //Implement path finding here
+                //calculate new target here
+                currentNode = targetnode;
+                currentDir = currentNode.transform.position - transform.position;
+                currentDir = currentDir.normalized;
             }
             else
             {

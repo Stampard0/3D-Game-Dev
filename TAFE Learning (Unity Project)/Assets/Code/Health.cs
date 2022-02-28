@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
@@ -42,6 +43,8 @@ public class Health : MonoBehaviour
             {
                 currentHealth = 0;
                 //we dead
+                int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(sceneIndex);
             }
             //subtract health from health bar
             healthBar.fillAmount = currentHealth / maxHealth;
