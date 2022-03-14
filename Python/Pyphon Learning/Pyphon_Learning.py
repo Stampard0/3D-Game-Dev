@@ -5,7 +5,7 @@ This is
 a multi line
 comment
 """
-'''
+"""
 var_a = 2
 var_b = 3.5
 var_c = "string"
@@ -17,8 +17,8 @@ print("int - " + str(var_a))
 print("float - " + str(float(var_a)))
 
 print("float - " + str(var_b))
-print("float - " + str(int(var_b)))
-'''
+print("int - " + str(int(var_b)))
+"""
 """
 animals = ["fish", "bird", "bear", "dog", "cat", "unicorn", "dragon"]
 for x in range(len(animals)):
@@ -35,7 +35,7 @@ while(q == False):
     if(user_input == 'Y'):
         q = True
 """
-
+"""
 collection = ["a", "b", "c", "d", "e", "f", "g"]
 def linear_search(search_term):
     for x in collection: #for every element in 'collection' array
@@ -44,3 +44,4 @@ def linear_search(search_term):
         return False #if the for loop ends , return False
 
 print (linear_search("f"))
+"""
