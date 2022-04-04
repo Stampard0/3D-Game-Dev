@@ -54,23 +54,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\FiniteStateMachine.cs" />
-    <Compile Include="Assets\Code\Breadth_First_Search.cs" />
+    <Compile Include="Assets\Code\Search Algarithim\Breadth_First_Search.cs" />
     <Compile Include="Assets\Code\Health.cs" />
     <Compile Include="Assets\Code\GenerateHUD.cs" />
-    <Compile Include="Assets\Code\Depth_First_Search.cs" />
+    <Compile Include="Assets\Code\Search Algarithim\Depth_First_Search.cs" />
     <Compile Include="Assets\Code\DamageTrigger.cs" />
     <Compile Include="Assets\Code\OOP.cs" />
     <Compile Include="Assets\Code\Interaction.cs" />
     <Compile Include="Assets\Code\PlayerController.cs" />
+    <Compile Include="Assets\Code\Player_Teleport.cs" />
     <Compile Include="Assets\Code\OOP_Vehicle.cs" />
-    <Compile Include="Assets\Code\Node.cs" />
+    <Compile Include="Assets\Code\Search Algarithim\Node.cs" />
     <Compile Include="Assets\Code\Kick.cs" />
     <Compile Include="Assets\Code\MainMenu.cs" />
     <Compile Include="Assets\Code\MouseLook.cs" />
     <Compile Include="Assets\Code\Door.cs" />
     <Compile Include="Assets\Code\ObjectTeleport.cs" />
     <Compile Include="Assets\Code\HealthPotion.cs" />
-    <Compile Include="Assets\Code\Player_Teleport.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
