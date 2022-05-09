@@ -34,6 +34,10 @@ public class Enemy : MonoBehaviour
                     transform.Translate(currentDir * speed * Time.deltaTime);
                 }
                 //Implement path finding here
+                else
+                {
+
+                }
                 //calculate new target here
                 currentNode = targetnode;
                 currentDir = currentNode.transform.position - transform.position;
@@ -74,4 +78,28 @@ public class Enemy : MonoBehaviour
     }
 
     //Implement DFS algorithm method here
+    private Node DFS()
+    {
+        Stack nodeStack = new Stack(); //Stacks the unvisited nodes, last one added to stack is next one visited
+        List<Node> visitedNodes = new List<Node>(); //tracks visited nodes
+        nodeStack.Push(GameManager.Instance.Nodes[0]); //add root node to stack
+
+        while(nodeStack.Count > 0) //loop while stack is not empty
+        {
+            Node currentNode = (Node)nodeStack.Pop(); //pop the last node added to stack
+            visitedNodes.Add(currentNode); //mark current node as visited
+            foreach (Node child in currentNode.Children) //loop through each child of current node
+            {
+                if(visitedNodes.Contains(child) == false && nodeStack.Contains(child) == false)
+                {
+                    if (child == GameManager.Instance.Player.CurrentNode) //check if this child is equal to players current node
+                    {
+                        return child; //if so, return the child
+                    }
+                    nodeStack.Push(child); //push child to node
+                }
+            }
+        }
+        return null; //target not found
+    }
 }
